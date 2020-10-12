@@ -122,7 +122,7 @@
       height: 60vh;
   }
 
-  @media only screen and (max-width: 375px){
+  @media only screen and (max-width: 414px){
     .grid-repos {
         display: grid;
         grid-template-columns: 1fr 1fr;

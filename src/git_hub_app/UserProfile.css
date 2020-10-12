@@ -94,12 +94,12 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 414px){
     .div-profile {
         margin-top: 1px;
         display: grid;
         width: 312px;
-        margin-left: 28px;
+        margin-left: 55px;
     }
 
     .personal-info{

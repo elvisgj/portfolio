@@ -73,7 +73,7 @@ nav {
   .project-link {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 50px 0px 0px 28px;
+    margin: 50px 0px 0px 20px;
   }
 
   .project {

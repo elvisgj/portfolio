@@ -120,17 +120,17 @@
   /* Arrow */
   .select::after {
     content: "\25BC";
-    background: #929292;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #616161;
     cursor: pointer;
     pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
   }
 
 
-  @media only screen and (max-width: 375px){
+  @media only screen and (max-width: 414px){
     .form-input{
     margin-left: 15px;
     font-size: 15px;
@@ -169,6 +169,7 @@
 
   .filter-todo {
    padding: 9px 0px 0px 0px;
+   height: 40px;
   }
 
   .form-button {
