@@ -104,7 +104,7 @@ function Form() {
                                     <p className="errors">{errors.phone}</p>
                                 </div>}
                                 <div className="button-wrapper">
-                                    <button type="submit" disabled={!isValid ? true : false}
+                                    <button type="submit" disabled={!isValid}
                                         className="button-submit" >LogIn</button>
                                 </div>
                             </form>
