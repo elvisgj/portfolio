@@ -1,4 +1,4 @@
-.divProfile {
+.div-profile {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     border-radius: 15px;
 }
 
-.profilePic {
+.profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -28,14 +28,14 @@
     margin-top: 2px;
     height: 104.7px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
 }
 
 .repo-div-profile{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     width: 369px;
     font-size: 20px;
 }
@@ -68,7 +68,7 @@
 
 }
 
-.userName {
+.user-name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,7 @@
     margin-top: 50px;
 }
 
-.profileTitle{
+.profile-title{
     display: flex;
     justify-content: center;
     align-items: center;

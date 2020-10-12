@@ -28,7 +28,6 @@ class userProfile extends React.Component {
                 alert('User Not Found')
             } else {
                 const data = await response.json()
-                console.log(data);
                 this.setState({
                     usersData: data,
                     profilePic: data.avatar_url,
@@ -54,13 +53,13 @@ class userProfile extends React.Component {
     render() {
         return (
             <div className="profile">
-                <div className="profileTitle">
+                <div className="profile-title">
                     <h1>{this.state.name}</h1>
                 </div>
-                <div className='divProfile'>
+                <div className='div-profile'>
                     <div className="personal-info">
-                        <img className="profilePic" src={this.state.profilePic} alt='profile of the user'></img>
-                        <h3 className="userName">{this.state.realName}</h3>
+                        <img className="profile-pic" src={this.state.profilePic} alt='profile of the user'></img>
+                        <h3 className="user-name">{this.state.realName}</h3>
                         <div>
                             <h5 className="profile-info">City: {this.state.location === null ? "Not declared" : this.state.location}</h5>
                             <h5 className="profile-info">Followers: {this.state.followers}</h5>

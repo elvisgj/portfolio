@@ -12,8 +12,8 @@ const formSchema = yup.object().shape({
     password: yup.string()
         .required("Password is required")
         .min(7),
-    username: yup.string().
-        required("Username is required")
+    username: yup.string()
+        .required("Username is required")
         .min(2),
     phone: yup.string()
         .matches(phoneRegExp, 'Phone number is not valid')
@@ -22,8 +22,8 @@ const formSchema = yup.object().shape({
 
 function Form() {
     return (
-        <div className="formDiv">
-            <h1 className='formTitle'>Form Validation with Formik</h1>
+        <div className="form-div">
+            <h1 className='form-title'>Form Validation with Formik</h1>
             <div className="">
                 <Formik initialValues={{
                     email: "",
@@ -31,11 +31,13 @@ function Form() {
                     username: "",
                     phone: ""
                 }}
-                    validationSchema={formSchema}>
+                    validationSchema={formSchema}
+                    onSubmit={(values) => console.log(values)}>
 
                     {({
-                        handleSubmit, handleChange, handleBlur, values, errors, touched,
+                        handleSubmit, handleChange, handleBlur, isValid, values, errors, touched,
                     }) => {
+
                         return (
                             <form onSubmit={handleSubmit}>
                                 <div className="div-input">
@@ -102,7 +104,7 @@ function Form() {
                                     <p className="errors">{errors.phone}</p>
                                 </div>}
                                 <div className="button-wrapper">
-                                    <button type="submit" disabled={errors.email || errors.password || errors.username || errors.phone}
+                                    <button type="submit" disabled={!isValid ? true : false}
                                         className="button-submit" >LogIn</button>
                                 </div>
                             </form>

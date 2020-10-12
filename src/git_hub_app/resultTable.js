@@ -7,7 +7,7 @@ class ResultTable extends React.Component {
 
     render() {
         if (this.props.repos.length === 0) {
-            return <div className="titleOne">No repositories to show</div>
+            return <div className="title-one">No repositories to show</div>
         }
         let repos = this.props.repos.map(item => <RepoInfo key={item.id} item={item} />)
 
