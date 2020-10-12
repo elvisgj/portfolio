@@ -3,7 +3,6 @@ import './Todo.css';
 
 const Form = ({ setInputText, todos, setTodos, inputText, setStatus, filteredTodos }) => {
     const inputTextHendler = (e) => {
-        console.log(e);
         setInputText(e.target.value)
     }
     const submitTodosHandler = (e) => {
