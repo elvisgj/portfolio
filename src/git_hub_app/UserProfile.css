@@ -1,0 +1,95 @@
+.divProfile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info{
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ebf8ff;
+    border-color: #65afd4;
+    border-radius: 15px;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #65afd4;
+    border-width: 2px;
+}
+
+.bio {
+    width: 369px;
+    font-size: 15px;
+    margin-top: 2px;
+    height: 104.7px;
+    display: flex;
+    justify-content: start;
+
+}
+
+.repo-div-profile{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 369px;
+    font-size: 20px;
+}
+
+.public-repos{
+    margin-right: 30px;
+}
+
+.repos-link{
+    text-decoration: none;
+    color: black;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: small;
+    padding: 5px;
+}
+
+.repos-link:hover{
+    background-color:#ebf8ff;
+    color: black;
+    border-color: #65afd4;
+    border-width: 2px;
+}
+
+
+.bio-title{
+    margin-bottom: 0.28px;
+    margin-top: 5.28px;
+
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repos{
+    padding-left: 50px;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profileTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
