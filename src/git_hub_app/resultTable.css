@@ -1,8 +1,6 @@
-.container {
+.grid-repos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-
-
 }
 
 .title {
@@ -73,7 +71,7 @@
       margin-top: 80px;
   }
 
-.pagination{
+.pagination-repos{
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -122,4 +120,53 @@
       align-items: center;
       margin-top: 2rem;
       height: 60vh;
+  }
+
+  @media only screen and (max-width: 375px){
+    .grid-repos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .repo-div {
+        border: #87bdd8;
+        border-style: solid;
+        border-radius: 10px;
+     }
+
+     .repo-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #87bdd8;
+        color: white;
+        font-size: 11px;
+    }
+
+    .repo-des {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 11px;
+    }
+
+    .repo-link{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #006ca1;
+        width: 250px;
+        font-size: 11px;
+        width: max-content;
+    }
+
+    .pagination-repos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 41px;
+    }
+
   }

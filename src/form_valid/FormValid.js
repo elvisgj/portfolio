@@ -87,7 +87,7 @@ function Form() {
                                 {errors.username && touched.username && < div >
                                     <p className="errors">{errors.username}</p>
                                 </div>}
-                                <div className="div-input">
+                                <div className="div-input-phone">
                                     <div className="lable">
                                         <label htmlFor="phone">Phone Number: </label>
                                     </div>

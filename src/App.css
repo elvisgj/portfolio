@@ -68,3 +68,25 @@ nav {
   align-items: center;
   color: black;
 }
+
+@media only screen and (max-width: 375px){
+  .project-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0px 10px 0px;
+  }
+
+  .project {
+    margin-left: 25px;
+    margin-top: 100px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #87bdd8;
+    background-color: lightblue;
+  }
+  .project:hover{
+  border-color: #65afd4;
+  }
+}

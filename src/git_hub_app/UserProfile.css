@@ -93,3 +93,82 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 375px){
+    .div-profile {
+        margin-top: 1px;
+        display: grid;
+        width: 312px;
+        margin-left: 28px;
+    }
+
+    .personal-info{
+        padding: 5px;
+        border-width: 1px;
+        border-style: solid;
+        background-color: #ebf8ff;
+        border-color: #65afd4;
+        border-radius: 15px;
+        width: 205px;
+        margin-left: 100px;
+    }
+
+    .bio {
+        width: 369px;
+        font-size: 15px;
+        margin-top: 2px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        width: 320px;
+        margin-left: 18px;
+    }
+
+    .bio-title{
+        margin-bottom: 0.28px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 320px;
+        margin-left: 18px;
+    }
+
+    .repo-div-profile{
+        display: grid;
+        font-size: 20px;
+        height: 124.433px;
+        margin-bottom: 0px;
+        margin-right: 89px;
+        width: 222px;
+        margin-left: 47px;
+    }
+
+    .public-repos{
+        display: flex;
+        justify-content: center;
+        width: 219px;
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+    .repos-link{
+        text-decoration: none;
+        color: black;
+        border: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        font-size: small;
+        padding: 5px;
+        width: 111px;
+        margin-left: 73px;
+    }
+
+    .repos{
+        padding-left: 27px;
+        width: 335px;
+        margin-right: 50px;
+    }
+}

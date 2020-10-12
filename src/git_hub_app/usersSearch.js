@@ -66,10 +66,10 @@ class usersSearch extends React.Component {
         return (
             <div className='div'>
                 <div>
-                    <h1 className='search-title'>Search GitHub Users</h1>
+                    <h1 className='title'>Search GitHub Users</h1>
                 </div>
-                <div className='title'>
-                    <input
+                <div className='search'>
+                    <input className="input-github"
                         placeholder="Type the GitHub User"
                         onInput={this.textInput}>
                     </input>

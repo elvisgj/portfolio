@@ -14,7 +14,7 @@ class usersResults extends React.Component {
         return (
             <div>
                 <div className='sub-title'>Users founded</div>
-                <div className="container">{users}</div>
+                <div className="grid-users">{users}</div>
                 {
                     this.props.totalPages !== 0 && <PaginationUserSearch
                         totalPages={this.props.totalPages}

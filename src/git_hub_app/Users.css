@@ -1,18 +1,16 @@
-.container {
+.grid-users {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.title {
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
 }
 
-.search-title{
+.title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +90,7 @@
   .pagination{
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
   }
 
   .page-links{
@@ -138,4 +136,77 @@
       align-items: center;
       margin-top: 2rem;
       height: 60vh;
+  }
+
+
+  @media only screen and (max-width: 375px){
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 30px;
+    }
+
+    .input-github {
+        width: 192px;
+    }
+
+    .button {
+        background-color: #87bdd8;
+        border: 2px solid #87bdd8;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 32px;
+        margin-left: 10px;
+        padding-right: 32px;
+    }
+
+    .grid-users {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .user-div {
+        border-style: solid;
+        border-color: #87bdd8;
+        border-radius: 10px;
+        width: 164px;
+     }
+
+    .users-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #87bdd8;
+        color: white;
+        font-size: 11px;
+    }
+
+    .profile-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 54px;
+        border-radius: 6px;
+        color: #87bdd8;
+        background-color: #ebf8ff
+    }
+
+    .pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 41px;
+    }
+
   }

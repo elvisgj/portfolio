@@ -13,7 +13,7 @@ function PaginationRepos({ totalPages, userName, currentPage }) {
     const pagesToShow = pageNumbers.slice(trimStart, trimEnd)
 
 
-    return <div className='pagination'>
+    return <div className='pagination-repos'>
         <ul className='page-links'>
             {totalPages < 6 || trimStart < 1 ? '' : <li>
                 <Link className="anc" to={`/github/users/${userName}/repos?page=1`}>First</Link>

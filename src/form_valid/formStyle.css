@@ -15,6 +15,12 @@
     align-items: center;
 }
 
+.div-input-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lable{
     padding-right: 15px;
     margin-top: 15px;
@@ -78,4 +84,49 @@
     margin-left: 35px;
     color: red;
     margin-bottom: 0px;
+  }
+
+  @media only screen and (max-width: 375px){
+    .form-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        margin-bottom: 52px;
+    }
+
+    .div-input-phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 49px;
+    }
+
+    .lable{
+        padding-right: 15px;
+        font-size: 13px;
+    }
+
+    .lable-name{
+        padding-right: 15px;
+        font-size: 13px;
+    }
+
+    .button-submit {
+        background-color: #87bdd8;
+        border: 2px solid #87bdd8;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 32px;
+        margin-left: 10px;
+        padding-right: 32px;
+    }
   }

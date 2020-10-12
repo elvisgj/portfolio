@@ -13,7 +13,7 @@ class ResultTable extends React.Component {
 
         return (
             <div>
-                <div className="container">{repos}</div>
+                <div className="grid-repos">{repos}</div>
                 {
                     this.props.totalPages !== 0 && <PaginationRepos
                         totalPages={this.props.totalPages}
