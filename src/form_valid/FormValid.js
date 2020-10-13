@@ -41,10 +41,11 @@ function Form() {
                         return (
                             <form onSubmit={handleSubmit}>
                                 <div className="div-input">
-                                    <div className="lable-name">
+                                    <div className="lable">
                                         <label htmlFor="email">Email:</label>
                                     </div>
                                     <input
+                                        className="input"
                                         type="text"
                                         name="email"
                                         value={values.email}
@@ -55,7 +56,7 @@ function Form() {
                                 {errors.email && touched.email && <div>
                                     <p className="errors">{errors.email}</p>
                                 </div>}
-                                <div className="div-input">
+                                <div className="div-input-spec">
                                     <div className="lable">
                                         <label htmlFor="password">Password:</label>
                                     </div>
@@ -71,7 +72,7 @@ function Form() {
                                 {errors.password && touched.password && < div >
                                     <p className="errors">{errors.password}</p>
                                 </div>}
-                                <div className="div-input">
+                                <div className="div-input-spec">
                                     <div className="lable" >
                                         <label htmlFor="Username">Username:</label>
                                     </div>
@@ -87,12 +88,12 @@ function Form() {
                                 {errors.username && touched.username && < div >
                                     <p className="errors">{errors.username}</p>
                                 </div>}
-                                <div className="div-input-phone">
+                                <div className="div-input">
                                     <div className="lable">
-                                        <label htmlFor="phone">Phone Number: </label>
+                                        <label htmlFor="phone">Phone:</label>
                                     </div>
                                     <input
-                                        className="input-phone"
+                                        className="input"
                                         type="text"
                                         name="phone"
                                         value={values.phone}

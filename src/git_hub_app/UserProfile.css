@@ -98,7 +98,7 @@
         margin-top: 1px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .personal-info{
@@ -109,7 +109,6 @@
         border-color: #65afd4;
         border-radius: 15px;
         width: 205px;
-        margin-left: 100px;
     }
 
     .bio {

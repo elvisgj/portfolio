@@ -38,6 +38,7 @@
     padding-right: 10px;
 }
 
+
 .profile-link{
     display: flex;
     align-items: center;
@@ -46,7 +47,6 @@
     height: 54px;
     color: rgba(0, 0, 0, 0.822);
 }
-
 .profile-link:hover{
     background-color: #ebf8ff;
     border-radius: 6px;
@@ -148,10 +148,6 @@
         font-size: 30px;
     }
 
-    .input-github {
-        width: 192px;
-    }
-
     .button {
         background-color: #87bdd8;
         border: 2px solid #87bdd8;
@@ -159,28 +155,25 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
+        font-size: 12px;
         transition-duration: 0.4s;
         cursor: pointer;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 32px;
+        padding-left: 12px;
         margin-left: 10px;
-        padding-right: 32px;
+        padding-right: 12px;
     }
 
     .grid-users {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-left: 15px;
     }
 
     .user-div {
         border-style: solid;
-        border-color: #87bdd8;
+        border: #87bdd8;
         border-radius: 10px;
-        width: 164px;
      }
 
     .users-name {
@@ -210,6 +203,10 @@
         align-items: center;
         justify-content: center;
         padding-right: 41px;
+    }
+
+    .input-github{
+        height: 24px;
     }
 
   }

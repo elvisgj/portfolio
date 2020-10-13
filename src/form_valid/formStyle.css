@@ -26,18 +26,8 @@
     margin-top: 15px;
 }
 
-.lable-name{
-    padding-right: 15px;
-}
-
 .input{
     margin-top: 15px;
-    margin-right: 30px;
-}
-
-.input-phone{
-    margin-top: 15px;
-    margin-right: 64px;
 }
 
 .button-submit {
@@ -95,19 +85,14 @@
         margin-bottom: 52px;
     }
 
-    .div-input-phone{
+    .div-input-spec{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 49px;
+        padding-right: 25px;
     }
 
     .lable{
-        padding-right: 15px;
-        font-size: 13px;
-    }
-
-    .lable-name{
         padding-right: 15px;
         font-size: 13px;
     }
@@ -135,6 +120,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .input{
+       width: min-content;
     }
 
   }
