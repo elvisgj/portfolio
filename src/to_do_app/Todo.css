@@ -160,7 +160,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem;
+    padding: 10px 15px 25px 15px;
     background: #929292;
     cursor: pointer;
     pointer-events: none;

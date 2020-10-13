@@ -41,9 +41,8 @@
 }
 
 .public-repos{
-    margin-right: 30px;
+    padding-right: 30px;
 }
-
 .repos-link{
     text-decoration: none;
     color: black;
@@ -97,9 +96,9 @@
 @media only screen and (max-width: 414px){
     .div-profile {
         margin-top: 1px;
-        display: grid;
-        width: 312px;
-        margin-left: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .personal-info{
@@ -132,26 +131,24 @@
         margin-top: 20px;
         display: flex;
         justify-content: center;
-        width: 320px;
-        margin-left: 18px;
+        margin-left: 30px;
     }
 
     .repo-div-profile{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 20px;
         height: 124.433px;
-        margin-bottom: 0px;
-        margin-right: 89px;
-        width: 222px;
-        margin-left: 47px;
+        width: 392px;
+
     }
 
     .public-repos{
         display: flex;
         justify-content: center;
-        width: 219px;
-        margin-right: 0px;
-        margin-left: 25px;
+        align-items: center;
     }
 
     .repos-link{
@@ -163,7 +160,7 @@
         font-size: small;
         padding: 5px;
         width: 111px;
-        margin-left: 73px;
+        margin-right: 27px;
     }
 
     .repos{

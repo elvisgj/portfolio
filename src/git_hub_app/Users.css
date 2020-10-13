@@ -190,6 +190,8 @@
         background-color: #87bdd8;
         color: white;
         font-size: 11px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
     }
 
     .profile-link{
