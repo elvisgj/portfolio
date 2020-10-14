@@ -31,11 +31,6 @@
     margin-top: 15px;
 }
 
-.formik{
-    display: flex;
-    flex-direction: column;
-}
-
 .button-submit {
     background-color: #4CAF50;
     border: 2px solid #4CAF50;
