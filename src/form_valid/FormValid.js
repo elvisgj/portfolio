@@ -24,7 +24,7 @@ function Form() {
     return (
         <div className="form-div">
             <h1 className='form-title'>Form Validation with Formik</h1>
-            <div className="">
+            <div className="formik">
                 <Formik initialValues={{
                     email: "",
                     password: "",

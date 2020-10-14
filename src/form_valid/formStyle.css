@@ -15,10 +15,11 @@
     align-items: center;
 }
 
-.div-input-phone{
+.div-input-spec{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 26px;
 }
 
 .lable{
@@ -28,6 +29,11 @@
 
 .input{
     margin-top: 15px;
+}
+
+.formik{
+    display: flex;
+    flex-direction: column;
 }
 
 .button-submit {
@@ -89,7 +95,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 25px;
+        padding-right: 24px;
+    }
+
+    .div-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .lable{
