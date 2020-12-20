@@ -1,212 +1,213 @@
 .grid-users {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 .sub-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    font-style: oblique;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  font-style: oblique;
+  font-size: 20px;
 }
 
 .users-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #145da0;
+  color: white;
+  height: 25px;
+}
+.user {
+  padding-right: 10px;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 54px;
+  color: rgba(0, 0, 0, 0.822);
+}
+.profile-link:hover {
+  background-color: #ebf8ff;
+  border-radius: 6px;
+  color: #145da0;
+}
+
+.user-div {
+  margin: 5px;
+  height: 80px;
+  border-style: solid;
+  border-color: #006ca1;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid #4caf50;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 32px;
+  margin-left: 10px;
+  padding-right: 32px;
+}
+.button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.div {
+  margin-top: 80px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.anc {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  margin: 6px;
+  text-decoration: none;
+  color: cornflowerblue;
+  font-size: 20px;
+}
+.anc:hover {
+  background-color: #ebf8ff;
+  color: black;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 60vh;
+}
+
+@media only screen and (max-width: 414px) {
+  .title {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    font-size: 30px;
+  }
+
+  .button {
     background-color: #87bdd8;
+    border: 2px solid #87bdd8;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    margin-left: 10px;
+    padding-right: 12px;
+  }
+
+  .grid-users {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-div {
+    border-style: solid;
+    border: #006ca1;
+    border-radius: 10px;
+  }
+
+  .users-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006ca1;
     color: white;
-    height: 25px;
-}
-.user{
-    padding-right: 10px;
-}
+    font-size: 11px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
 
-
-.profile-link{
+  .profile-link {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     height: 54px;
-    color: rgba(0, 0, 0, 0.822);
-}
-.profile-link:hover{
+    border-radius: 6px;
+    color: #006ca1;
     background-color: #ebf8ff;
-    border-radius: 6px;
-    color: #87bdd8;
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 41px;
+  }
+
+  .input-github {
+    height: 24px;
+  }
 }
-
-.user-div {
-   margin: 5px;
-   height: 80px;
-   border-style: solid;
-   border-color: #87bdd8;
-   border-radius: 10px;
-}
-
-.button {
-    background-color: white;
-    border: 2px solid #4CAF50;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 32px;
-    margin-left: 10px;
-    padding-right: 32px;
-  }
-  .button:hover {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  .div {
-      margin-top: 80px;
-  }
-
-  .pagination{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .page-links{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style: none;
-  }
-
-  .anc{
-    padding-left: 5px;
-    padding-right: 5px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 6px;
-    margin: 6px;
-    text-decoration: none;
-    color: cornflowerblue;
-    font-size: 20px;
-  }
-  .anc:hover{
-    background-color:#ebf8ff;
-    color: black;
-  }
-
-  .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  .center-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-      height: 60vh;
-  }
-
-
-  @media only screen and (max-width: 414px){
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        font-size: 30px;
-    }
-
-    .button {
-        background-color: #87bdd8;
-        border: 2px solid #87bdd8;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 12px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 12px;
-        margin-left: 10px;
-        padding-right: 12px;
-    }
-
-    .grid-users {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .user-div {
-        border-style: solid;
-        border: #87bdd8;
-        border-radius: 10px;
-     }
-
-    .users-name {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #87bdd8;
-        color: white;
-        font-size: 11px;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
-    }
-
-    .profile-link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        height: 54px;
-        border-radius: 6px;
-        color: #87bdd8;
-        background-color: #ebf8ff
-    }
-
-    .pagination{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-right: 41px;
-    }
-
-    .input-github{
-        height: 24px;
-    }
-
-  }

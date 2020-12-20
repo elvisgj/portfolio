@@ -1,137 +1,133 @@
+.body {
+  color: rgb(253, 253, 253);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin-top: 30px;
+}
+header {
+  font-size: 2rem;
+}
 
-  .body {
-    background-color: #daebe8;
-    color: rgb(253, 253, 253);
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    margin-top: 30px;
-  }
-  header {
-    font-size: 2rem;
-  }
+.todo-title {
+  color: black;
+}
 
-  .todo-title{
-    color: black;
-  }
+.header-todo,
+.form-todo {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-input,
+.form-button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+.form-button {
+  color: lightgreen;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-button:hover {
+  background: lightgreen;
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .header-todo,
-  .form-todo {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-input,
-  .form-button {
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
-    background: white;
-  }
-  .form-button {
-    color: lightgreen;
-    background: #f7fffe;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .form-button:hover {
-    background:lightgreen;
-    color: white;
-  }
-  .todo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
 
-  .todo-list {
-    min-width: 30%;
-    list-style: none;
-  }
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
 
-  .todo {
-    margin: 0.5rem;
-    background: white;
-    font-size: 1.5rem;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 1s ease;
-  }
-  .filter-todo {
-    padding: 1rem;
-  }
-  .todo li {
-    flex: 1;
-  }
+.trash-btn,
+.complete-btn {
+  background: #ee4343;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: lightgreen;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
 
-  .trash-btn,
-  .complete-btn {
-    background: #ee4343;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  .complete-btn {
-    background:lightgreen;
-  }
-  .todo-item {
-    padding: 0rem 0.5rem;
-  }
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
 
-  .fa-trash,
-  .fa-check {
-    pointer-events: none;
-  }
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 
-  .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-  }
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
 
-  /*CUSTOM SELECTOR */
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
-  }
+/* Custom Select */
+.select {
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+select {
+  color: #9e9e9e;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #616161;
+  cursor: pointer;
+  pointer-events: none;
+}
 
-  /* Custom Select */
-  .select {
-    margin: 1rem;
-    overflow: hidden;
-    position: relative;
-
-  }
-  select {
-    color: #9e9e9e;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    width: 12rem;
-  }
-  /* Arrow */
-  .select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    background: #616161;
-    cursor: pointer;
-    pointer-events: none;
-  }
-
-
-  @media only screen and (max-width: 414px){
-    .form-input{
+@media only screen and (max-width: 414px) {
+  .form-input {
     margin-left: 15px;
     font-size: 15px;
     border: none;
@@ -145,7 +141,6 @@
     position: relative;
     height: 40px;
     width: 40px;
-
   }
   select {
     color: #9e9e9e;
@@ -168,8 +163,8 @@
   }
 
   .filter-todo {
-   padding: 9px 0px 0px 0px;
-   height: 40px;
+    padding: 9px 0px 0px 0px;
+    height: 40px;
   }
 
   .form-button {
@@ -216,6 +211,4 @@
     justify-content: center;
     align-items: center;
   }
-
-
-  }
+}

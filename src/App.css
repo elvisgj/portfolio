@@ -1,8 +1,8 @@
 .project-link {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 50px;
-  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 9rem;
 }
 
 .project {
@@ -10,87 +10,84 @@
   margin-right: 50px;
   margin-top: 100px;
   text-decoration: none;
-  border-style: solid;
-  border-width: 5px;
   width: 306.5px;
   border-radius: 10px;
   border-color: #87bdd8;
   background-color: lightblue;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.project:hover{
-border-color: #65afd4;
+.project:hover {
+  box-shadow: #145da0 0px 5px 15px;
 }
 
- body {
-  background-color: #daebe8;
+body {
+  background-color: #b1d4e0;
 }
-
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 8vh;
-  background: lightblue;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #1b73a8 74%);
   position: fixed;
   top: 0px;
   height: 25px;
   width: 100%;
   z-index: 100;
-  border-style: solid;
-  border-top-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 3px;
-  border-color: whitesmoke;
+  box-shadow: rgba(235, 239, 244, 0.4) 0px 0px 0px 2px,
+    rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.192) 0px 1px 0px inset;
 }
 
-.h3{
+.h3 {
   width: 189px;
-  color: black;
+  color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
 }
 
-.app-img{
-  width: 306.5px;
-  height: 100px;
+.app-img {
+  width: 17rem;
+  height: 6rem;
 }
 
-.app-img-div{
+.app-img-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link{
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #145da0;
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 414px) {
   .project-link {
     display: flex;
     flex-direction: column;
-    margin: 41px 0px 10px 0px;
-    align-items: center;
+    margin-top: 41px;
+    justify-content: center;
+    align-content: center;
   }
 
   .project {
     margin-top: 100px;
     text-decoration: none;
-    border-style: solid;
-    border-width: 5px;
+    background-color: lightblue;
     border-radius: 10px;
     border-color: #87bdd8;
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
   }
-  .project:hover{
-  border-color: #65afd4;
+  .project:hover {
+    border-color: #65afd4;
   }
 }
