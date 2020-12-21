@@ -168,9 +168,8 @@
   }
 
   .button {
-    background-color: #87bdd8;
-    border: 2px solid #87bdd8;
-    color: black;
+    background: linear-gradient(to bottom, #599bb3 5%, #097fb6 100%);
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
