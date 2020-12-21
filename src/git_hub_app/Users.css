@@ -60,6 +60,15 @@
   border-radius: 10px;
 }
 
+.input-github {
+  border: none;
+  border-bottom: 2px solid #006ca1;
+  outline: 0;
+  font-size: 1rem;
+  color: #38383c;
+  background: transparent;
+}
+
 .button {
   box-shadow: 0px 10px 14px -7px #276873;
   background: linear-gradient(to bottom, #599bb3 5%, #097fb6 100%);
@@ -172,15 +181,13 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    transition-duration: 0.4s;
+    font-size: 1rem;
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 12px;
+    padding-left: 32px;
     margin-left: 10px;
-    padding-right: 12px;
+    padding-right: 32px;
   }
 
   .grid-users {
