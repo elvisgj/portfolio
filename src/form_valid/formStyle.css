@@ -1,136 +1,146 @@
 .form-div {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .form-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 
-.div-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.div-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.div-input-spec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 26px;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-.lable{
-    padding-right: 15px;
-    margin-top: 15px;
+.div-input-spec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.input{
-    margin-top: 15px;
+.lable {
+  width: 16.5rem;
+  font-size: 1rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 17rem;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 0.9rem;
+  color: #38383c;
+  background: transparent;
 }
 
 .button-submit {
-    background-color: #4CAF50;
-    border: 2px solid #4CAF50;
-    color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 32px;
+  margin-top: 2rem;
+  padding-right: 32px;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #097fb6 100%);
+  border-radius: 8px;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #3d768a;
+  border: none;
+}
+
+.button-submit:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #097fb6 100%);
+}
+.button-submit:disabled {
+  color: #717070;
+  cursor: default;
+  background: rgb(187, 187, 187);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgb(231, 88, 88);
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 414px) {
+  .form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 1rem;
+  }
+
+  .div-input-spec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lable {
+    font-size: 13px;
+    width: 14.5rem;
+  }
+
+  .button-submit {
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    font-size: 1rem;
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 32px;
-    margin-left: 10px;
+    margin-top: 2rem;
     padding-right: 32px;
-}
-
-.button-submit:hover{
-    background-color: #239127;
-}
-.button-submit:disabled{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-  cursor: default;
-}
-
-  .button-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #097fb6 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #3d768a;
+    border: none;
   }
 
-  .errors{
+  .form-div {
+    margin-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 2px;
-    font-size: 11px;
-    margin-left: 35px;
-    color: red;
-    margin-bottom: 0px;
   }
 
-  @media only screen and (max-width: 414px){
-    .form-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 26px;
-        margin-bottom: 52px;
-    }
-
-    .div-input-spec{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 24px;
-    }
-
-    .div-input{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lable{
-        padding-right: 15px;
-        font-size: 13px;
-    }
-
-    .button-submit {
-        background-color: #87bdd8;
-        border: 2px solid #87bdd8;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 32px;
-        margin-left: 10px;
-        padding-right: 32px;
-    }
-
-    .form-div {
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input{
-       width: min-content;
-    }
-
+  .input {
+    width: min-content;
   }
+}
