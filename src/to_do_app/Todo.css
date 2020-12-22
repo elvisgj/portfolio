@@ -22,18 +22,18 @@ header {
 .form-input,
 .form-button {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: none;
   background: white;
 }
 .form-button {
-  color: lightgreen;
+  color: #32cd32;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .form-button:hover {
-  background: lightgreen;
+  background: #32cd32;
   color: white;
 }
 .todo-container {
@@ -50,7 +50,7 @@ header {
 .todo {
   margin: 0.5rem;
   background: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ header {
   transition: all 1s ease;
 }
 .filter-todo {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .todo li {
   flex: 1;
@@ -66,15 +66,15 @@ header {
 
 .trash-btn,
 .complete-btn {
-  background: #ee4343;
+  background: #dc143c;
   color: white;
   border: none;
-  padding: 1rem;
+  padding: 0.6rem;
   cursor: pointer;
   font-size: 1rem;
 }
 .complete-btn {
-  background: lightgreen;
+  background: #32cd32;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -120,7 +120,7 @@ select {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background: #616161;
   cursor: pointer;
   pointer-events: none;
@@ -155,7 +155,7 @@ select {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px 15px 25px 15px;
+    padding: 10px 13px 25px 15px;
     background: #929292;
     cursor: pointer;
     pointer-events: none;
@@ -169,7 +169,7 @@ select {
 
   .form-button {
     padding: 0.5rem;
-    font-size: 15px;
+    font-size: 1.2rem;
     border: none;
     background: white;
     height: 40px;
@@ -178,7 +178,7 @@ select {
   .todo {
     margin: 0.5rem;
     background: white;
-    font-size: 12px;
+    font-size: 20px;
     color: black;
     display: flex;
     justify-content: space-between;
