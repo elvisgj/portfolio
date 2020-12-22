@@ -7,7 +7,7 @@ const phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
 const formSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
-  password: yup.string().required("Password is required").min(7),
+  password: yup.string().required("Password is required").min(8),
   username: yup.string().required("Username is required").min(2),
   phone: yup
     .string()
