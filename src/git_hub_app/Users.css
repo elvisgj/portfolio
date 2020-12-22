@@ -108,11 +108,13 @@
 
 .anc {
   padding: 0px 10px 0px 10px;
-  margin: 6px;
   text-decoration: none;
   font-size: 2rem;
   background-image: linear-gradient(to bottom, #408c99 5%, #097fb6 100%);
   color: white;
+  border: 1px solid #f3f3f3;
+  border-top: none;
+  border-bottom: none;
 }
 
 .anc:hover {
@@ -121,24 +123,24 @@
 
 .edge-right {
   padding: 3px 16px 3px 10px;
-  margin: 6px;
   text-decoration: none;
   font-size: 1rem;
   background-image: linear-gradient(to bottom, #408c99 5%, #097fb6 100%);
   color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-left: 1px solid #f3f3f3;
 }
 
 .edge-left {
   padding: 3px 10px 3px 16px;
-  margin: 6px;
   text-decoration: none;
   font-size: 1rem;
   background-image: linear-gradient(to bottom, #408c99 5%, #097fb6 100%);
   color: white;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  border-right: 1px solid #f3f3f3;
 }
 
 .loader {
