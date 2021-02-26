@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav>
       <Link className="h3" to="/">
-        <h3>Elvis Gjevori's workss</h3>
+        <h3>Elvis Gjevori's works</h3>
       </Link>
     </nav>
   );
